@@ -79,6 +79,14 @@ section {
 .favourite-link a:hover::after {
   width: 120%;
 }
+@media only screen and (max-width: 767px) {
+  .logo img {
+    height: 20px !important;
+  }
+  .logo-footer {
+    height: 30px;
+  }
+}
 
 .logo a {
   color: inherit;
@@ -142,7 +150,18 @@ section {
   background-repeat: no-repeat;
   overflow: hidden;
 }
-
+@media only screen and (max-width: 667px) {
+  .photo-hero {
+    height: 77%;
+    width: 222%;
+  }
+  .photos {
+    top: 0;
+    left: -3px;
+    right: 33px;
+    bottom: 0;
+  }
+}
 .photo.one {
   grid-column: 5;
   grid-row: 1;
@@ -177,10 +196,21 @@ section {
   align-items: center;
   gap: 10rem;
 }
+@media only screen and (max-width: 767px) {
+  .features {
+    gap: 2rem;
+  }
+}
 .features-text {
   text-transform: uppercase;
   letter-spacing: 5px;
   font-weight: 500;
+}
+@media only screen and (max-width: 767px) {
+  .features-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
 }
 .features img {
   width: 100%;
@@ -196,10 +226,10 @@ section {
 .feature-shutter-r {
   position: absolute;
   z-index: 1;
-  height: 100%;
-  width: 100%;
+  height: 101%;
+  width: 102%;
   top: 0;
-  left: 0;
+  left: -1px;
   right: 0;
   bottom: 0;
   background-color: white;
@@ -226,6 +256,11 @@ section {
 .gallery-item {
   position: relative;
   width: 50%;
+}
+@media only screen and (max-width: 667px) {
+  .gallery-item {
+    margin-bottom: 10rem;
+  }
 }
 .gallery-item-title {
   position: absolute;
@@ -254,6 +289,11 @@ section {
   background-size: cover;
   width: 100%;
   height: 100vh;
+}
+@media only screen and (max-width: 667px) {
+  .gallery-item-img {
+    height: 80vh;
+  }
 }
 .footer {
   text-align: center;
@@ -338,6 +378,100 @@ section {
 }
 .blog-image-7 {
   grid-column: auto / span 6;
+}
+@media only screen and (min-width: 1814px) {
+  .blog-image-1 {
+    grid-column: auto / span 5;
+    grid-row: auto / span 2;
+  }
+
+  .blog-image-2 {
+    grid-column: auto / span 4;
+  }
+  .blog-image-3 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 3;
+  }
+  .blog-image-4 {
+    grid-column: auto / span 4;
+  }
+  .blog-image-5 {
+    grid-column: auto / span 4;
+  }
+  .blog-image-6 {
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;
+  }
+  .blog-image-7 {
+    grid-column: auto / span 8 !important;
+  }
+}
+@media only screen and (min-width: 1656px) {
+  .blog-image-1 {
+    grid-column: auto / span 5;
+    grid-row: auto / span 2;
+  }
+
+  .blog-image-2 {
+    grid-column: auto / span 4;
+  }
+  .blog-image-3 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 3;
+  }
+  .blog-image-4 {
+    grid-column: auto / span 4;
+  }
+  .blog-image-5 {
+    grid-column: auto / span 4;
+  }
+  .blog-image-6 {
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;
+  }
+  .blog-image-7 {
+    grid-column: auto / span 8 !important;
+  }
+}
+@media only screen and (min-width: 1545px) {
+  .blog-image-7 {
+    grid-column: auto / span 7;
+  }
+
+  .blog-image-1 {
+    grid-column: auto / span 4;
+    grid-row: auto / span 2;
+  }
+}
+@media only screen and (max-width: 1211px) {
+  .blog-image-1 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
+  .blog-image-2 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
+  .blog-image-3 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
+  .blog-image-4 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
+  .blog-image-5 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
+  .blog-image-6 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
+  .blog-image-7 {
+    grid-column: auto / span 3;
+    grid-row: auto / span 2;
+  }
 }
 
 .flip {
@@ -445,7 +579,34 @@ section {
   padding-bottom: 1.2rem;
   font-family: "Poppins", sans-serif;
 }
+@media only screen and (max-width: 1211px) {
+  .flip .front,
+  .flip .back {
+    font-size: 1rem;
+    line-height: 120%;
+    padding-bottom: 1rem;
+  }
+  .flip .front p,
+  .flip .back p {
+    font-size: 0.7rem;
+    line-height: 120%;
+    padding-bottom: 1rem;
+  }
+  .flip .front span,
+  .flip .back span {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 1rem;
+    line-height: 120%;
+  }
 
+  .flip .front h1,
+  .flip .back h1 {
+    line-height: 120%;
+    padding-bottom: 0.8rem;
+  }
+}
 .text-shadow {
   text-shadow: 1px 1px rgba(0, 0, 0, 0.04), 2px 2px rgba(0, 0, 0, 0.04),
     3px 3px rgba(0, 0, 0, 0.04), 4px 4px rgba(0, 0, 0, 0.04),
